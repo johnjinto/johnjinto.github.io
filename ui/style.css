@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    padding-top: 30;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: 300%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-medium {
+    height: 200px;
+}
+
+    .container{
+    max-width: 900px;
+    margin: 0 auto;
+    color: #483838;
+    font-family: sans-serif;
+    padding-left: 20;
+    padding-right: 20;
+}
+
