@@ -1,68 +1,30 @@
 <!doctype html>
 <html>
     <head>
-<style>
-.center {
-    text-align: center;
-}
-
-.text-big {
-    font-size: 300%;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.img-medium {
-    height: 200px;
-}
-
-    .container{
-    max-width: 900px;
-    margin: 0 auto;
-    color: #483838;
-    font-family: sans-serif;
-    padding-left: 20;
-    padding-right: 20;
-}
-
-</style>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>    
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
     <body>
-      <script type="text/javascript">
-var name = prompt("enter name");
-          
-confirm("Shall we start "+name+" ?");
-          
-        </script>
-      <h2>
-    Hi dear Kuttans...Move me here and there...HA..HA...HA..HA
-    </h2>
-        <p><i><b>
-        GREETINGS FROM BABY JESUS....    
-        </b></i></p>
-     <div>   
-            <img id = 'angel' src="http://www.knitting-bee.com/wp-content/uploads/2015/11/Hearty-Holiday-Santa-free-knitting-pattern-200x300.jpg" style="position: relative; left: 10px; top:10px; right: 100; bottom:100 "/>
-        
-        <br>
-    </div>    
-        <div id = 'phrase' font-size: 300%; style="position:fixed; width:100%; height:70px; padding:5px; bottom:50px" ><b>
-            Vox de Pacis
-        </b></div>
-<hr/>
-        <div id = 'control panel' style="position:fixed; width:100%; height:70px; background-color:yellow; padding:5px; bottom:0px;">
-            
-            <button id="leftbutton"> LEFT</button>
-            <button id="rightbutton"> RIGHT</button>
-            <button id="upbutton"> UP</button>
-            <button id="downbutton">DOWN</button>
-
+        <div class="container">
+            <div class="center">
+                <img id='madi' src="/ui/santa.png" class="img-medium"/>
+            </div>
+            <h3>About Me</h3>
+            <div>
+                Hi. Happy Christmas<br/>
+                Jesus is the reason for the season
+            </div>
+            <hr/>
+            <div id="login_area">
+                <center>Loading login status...</center>
+            </div>
+            <hr/>
+            <h3>My Articles</h3>
+            <div id="articles">
+                <center>Loading articles...</center>
+            </div>
+            <div class="footer">
+            </div>
         </div>
-
         <script type="text/javascript" src="/ui/main.js">
         </script>
     </body>
