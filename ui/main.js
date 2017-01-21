@@ -4,15 +4,20 @@
 
 var go= document.getElementById('go-btn');
 
-console.log("In main");
-        console.log(userName);
-        console.log(myAge);
 
     go.onclick = function () {
-      var userName = document.getElementById('userName').value;
+ //     var userName = document.getElementById('userName').value;
       var myAge = document.getElementById('myAge').value;
+      var monthsDone = myAge*12;
+      // total months for 75 years =900
+      var monthsYet = 900-monthsDone;
+     document.getElementById("boxDone").innerHTML = " ";
+     document.getElementById("boxYet").innerHTML = " ";
         // Create a request object
-        var request = new XMLHttpRequest();
+ /*  CODE TO ENTER IN DATABASE SUPPRESED NOW
+
+
+      var request = new XMLHttpRequest();
         
         // Capture the response and store it in a variable
         request.onreadystatechange = function () {
@@ -32,11 +37,26 @@ console.log("In main");
               
           }  
           // Not done yet
+*/
+        var i=0;
+        for (i=0;i<monthsDone;i++)
+        {
+            document.getElementById("boxDone").innerHTML += "&#9813";
+        
+        }
+        
+
+        var j=0;
+         for (j=0;j<monthsYet;j++)
+        {
+            document.getElementById("boxYet").innerHTML += "&#9813";
+        
+        }
         };
         
         // Make the request
-        request.open('POST', '/reg-age', true);
-        request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({userName: userName, myAge: myAge}));  
+       // request.open('POST', '/reg-age', true);
+       // request.setRequestHeader('Content-Type', 'application/json');
+       // request.send(JSON.stringify({userName: userName, myAge: myAge}));  
 
-    };
+   // };

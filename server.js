@@ -6,13 +6,6 @@ var crypto = require('crypto');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-var config = {
-    user: 'postgres',
-    database: 'postgres',
-    host: 'localhost',
-    port: '5432',
-    password: 'ilurist'
-};
 
 var app = express();
 app.use(morgan('combined'));

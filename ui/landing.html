@@ -6,12 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale =1">
     
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <style>
      .jumbotron{
         background-color: #2E2D88;
         color: white;
      }   
 
+     .bluerect{
+
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        line-height: 44px;
+        color: blue;
+
+     }
+     .greenrect{
+
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        line-height: 44px;
+        color: green;
+
+     }
 
     </style>
     </head>
@@ -75,24 +98,39 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h4>Let us box up!</h4>
             The following tool helps you to visualize your current location in the journey of life<br>
-            Each box in the grid represents a week in an average lifetime of 75 years<br>
+            Each crown in the grid represents a month in an average lifetime of 75 years<br>
             </div>
 
             <div class="col-lg-6" >
 
-            <input type="text" placeholder="Name" id="userName">  
+            <!-- <input type="text" placeholder="Name" id="userName"> -->
+              
             <input type="text" placeholder="Age" id="myAge">  
             <input type="button" value="Go!" id="go-btn">
+            
+
             </div>
 
+                        <div class = "container">
+                        <div class="col-lg-6" >                        
+                                    <br>Wonderful months passed<br>
+                        
+                        <div id="boxDone" class="bluerect">  </div>
+                        
+                                    Wonderful months ahead<br>
+                        
+                        <div id="boxYet" class="greenrect"> </div>
+                        </div>
+                        </div>
             
-            <hr/>
-          
 
-    
-        
-    </div>
+          
+            <hr/>
+            <hr/>          
+
    
+        
+     </div>
 
 
     <script type="text/javascript" src="/ui/main.js"></script>
