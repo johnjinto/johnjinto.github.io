@@ -8,9 +8,19 @@ var go= document.getElementById('go-btn');
     go.onclick = function () {
  //     var userName = document.getElementById('userName').value;
       var myAge = document.getElementById('myAge').value;
+      if(myAge<0)
+      {
+        window.alert("YET TO BEGIN YOUR LIFE...ENJOY ONCE IT BEGINS");
+      }
+
+
+      if(myAge>90)
+      {
+        window.alert("Sir, you are past 90 years...You don't need to worry about months now..Enjoy your evening..Thanks for making the planet beautiful");
+      }
       var monthsDone = myAge*12;
       // total months for 75 years =900
-      var monthsYet = 900-monthsDone;
+      var monthsYet = 1080-monthsDone;
      document.getElementById("boxDone").innerHTML = " ";
      document.getElementById("boxYet").innerHTML = " ";
         // Create a request object
